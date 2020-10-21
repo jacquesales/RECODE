@@ -5,11 +5,6 @@
 Projeto individual do Recode Pro: website **Full Stack Eletro** 
 Um e-commerce de produtos para casa
 
- *```VS Code ```*
-
- *```LiveServer ```*
-
-
 
 + **Front-end**
     + HTML
@@ -17,6 +12,11 @@ Um e-commerce de produtos para casa
     + Javascript
 +  **Back-end**
     + Banco de Dados: MySQL (Workbench)
+    
+    
+*```VS Code ```*
+
+*```LiveServer ```*
 
 -------------
 
