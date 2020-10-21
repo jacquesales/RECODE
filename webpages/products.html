@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/styles/main.css">
+        <title>Produtos - Full Stack Eletro</title>
+    </head>
+
+    <body>
+
+        <!--Menu-->
+        <nav class="menu">
+            <a href="./index.html"><img src="/images/logotipo.png" alt="Logotipo"></a>
+            <div class="nav-sections">
+                <a href="./products.html">Nossos Produtos</a></td>
+                <a href="./stores.html">Nossas lojas</a></td>
+                <a href="./contact.html">Fale Conosco</a></td>
+            </div>
+        </nav>
+
+        <header class="header">
+            <h1>Produtos</h1>
+        </header>
+        <hr>
+
+        <!--Categorias-->
+        <section class="categories">
+            <h3>Categorias</h3>
+            <ul>
+                <li onclick="show_all()">Todos (12)</li>
+                <li onclick="show_category('geladeira')">Geladeiras (3)</li>
+                <li onclick="show_category('fogao')">Fogões (2)</li>
+                <li onclick="show_category('microondas')">Microondas (3)</li>
+                <li onclick="show_category('lavaroupa')">Lavadoura de roupas (2)</li>
+                <li onclick="show_category('lavalouca')">Lava-louças (2)<li></li>                      
+            </ul>
+        </section>
+
+        <section class="products">
+            <!--Geladeiras-->        
+            <div class="box-product" id="geladeira" style="display: block;">
+                <img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" src="/images/geladeira-brastemp.png" alt="Geladeira Brastemp">
+                <br>
+                <p class="description">Geladeira Frost Free Brastemp Inverse 540 litros</p>
+                <hr>
+                <p class="previousvalue">R$ 8.389,99</p>
+                <p class="currentvalue">R$ 7.019,99</p>
+            </div>
+
+            <div class="box-product" id="geladeira" style="display: block;">
+                <img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"  src="/images/geladeira-electrolux.png" alt="Geladeira Electrolux">
+                <br>
+                <p class="description">Geladeira Frost Free Electrolux Top Freezer 431 litros</p>
+                <hr>
+                <p class="previousvalue">R$ 6.849,99</p>
+                <p class="currentvalue">R$ 5.129,99</p>
+            </div>
+            
+            <div class="box-product" id="geladeira" style="display: block;">
+                <img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"  src="/images/geladeira-bottom.png" alt="Geladeira Bottom">
+                <br>
+                <p class="description">Geladeira Frost Free Bottom Inverse 454 litros</p>
+                <hr>
+                <p class="previousvalue">R$ 7.989,99</p>
+                <p class="currentvalue">R$ 6.609,99</p>
+            </div>
+
+            <!--Fogões-->
+            <div class="box-product" id="fogao" style="display: block;">
+                <img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"  src="/images/fogao-brastemp.png" alt="Fogão Brastemp">
+                <br>
+                <p class="description">Fogão 5 Bocas Brastemp Acendimento Automático</p>
+                <hr>
+                <p class="previousvalue">R$ 4.599,99</p>
+                <p class="currentvalue">R$ 3.819,99</p>
+            </div>
+
+            <div class="box-product" id="fogao" style="display: block;">
+                <img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"  src="/images/fogao-brastemp2.png" alt="Fogão Brastemp">
+                <br>
+                <p class="description">Fogão 5 Bocas Brastemp Turbo Chama Timer</p>
+                <hr>
+                <p class="previousvalue">R$ 5.199,99</p>
+                <p class="currentvalue">R$ 4.479,9</p>
+            </div>
+
+            <!--Microondas-->
+            <div class="box-product" id="microondas" style="display: block;">
+                <img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"  src="/images/microondas-electrolux.png" alt="Microondas Electrolux">
+                <br>
+                <p class="description">Microondas Electrolux Tira Odor 20 Litros</p>
+                <hr>
+                <p class="previousvalue">R$ 1.999,99</p>
+                <p class="currentvalue">R$ 1.729,99</p>
+            </div>
+
+            <div class="box-product" id="microondas" style="display: block;">
+                <img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"  src="/images/microondas-philco.png" alt="Microondas Philco">
+                <br>
+                <p class="description">Microondas Philco 21 Litros</p>
+                <hr>
+                <p class="previousvalue">R$ 2.959,99</p>
+                <p class="currentvalue">R$ 2.049,99</p>
+            </div>
+
+            <div class="box-product" id="microondas" style="display: block;">
+                <img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"  src="/images/microondas-electrolux2.png" alt="Microondas Electrolux">
+                <br>
+                <p class="description">Microondas Electrolux 20 Litros</p>
+                <hr>
+                <p class="previousvalue">R$ 2.759,99</p>
+                <p class="currentvalue">R$ 2.499,99</p>
+            </div>
+
+            <!--Lavadoura de roupas-->
+            <div class="box-product" id="lavaroupa" style="display: block;">
+                <img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"  src="/images/maq-lavaeseca-lg.png" alt="Maquina de lavar e secar roupa LG">
+                <br>
+                <p class="description">Máquina Lava e Seca Roupas 11 Kilos LG</p>
+                <hr>
+                <p class="previousvalue">R$ 7.999,99</p>
+                <p class="currentvalue">R$ 6.919,99</p>
+            </div>
+
+            <div class="box-product" id="lavaroupa" style="display: block;">
+                <img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"  src="/images/maq-lavar-brastemp.png" alt="Maquina de lavar e secar roupa Brastemp">
+                <br>
+                <p class="description">Máquina de Lavar Roupas 15 Kilos Brastemp</p>
+                <hr>
+                <p class="previousvalue">R$ 7.839,999</p>
+                <p class="currentvalue">R$ 6.079,99</p>
+            </div>
+
+            <!--Lavas-louças-->
+            <div class="box-product" id="lavalouca" style="display: block;">
+                <img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"  src="/images/lavaloucas-electrolux.png" alt="Lava louças Electrolux">
+                <br>
+                <p class="description">Lava-Louças Branca 14 Serviços Electrolux</p>
+                <hr>
+                <p class="previousvalue">R$ 7.399,99</p>
+                <p class="currentvalue">R$ 6.509,99</p>
+            </div>
+
+            <div class="box-product" id="lavalouca" style="display: block;">
+                <img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"  src="/images/lavaloucas-brastemp.png" alt="Lava louças Brastemp">
+                <br>
+                <p class="description">Lava-Louças 18 Serviços Brastemp</p>
+                <hr>
+                <p class="previousvalue">R$ 8.899,99</p>
+                <p class="currentvalue">R$ 7.609,99</p>
+            </div>
+        </section>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <footer id="footer">
+            <p class="payment">Formas de pagamento</p>
+            <img src="/images/formas-de-pagamento.png" alt="Formas de pagamento">
+            <br>
+            <p class="footer-text">&copy; Recode Pro</p>           
+        </footer>
+
+        <script src="/scripts/main.js"></script>        
+    </body>
+</html>
