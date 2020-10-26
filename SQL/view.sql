@@ -12,7 +12,7 @@ CREATE TABLE `produtos` (
   `preco_final` decimal(8,2) DEFAULT NULL,
   PRIMARY KEY (`idproduto`),
   UNIQUE KEY `imagem_UNIQUE` (`imagem`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 
 /* Inserindo os valores na ordem correspondente aos atributos */
@@ -43,7 +43,7 @@ CREATE TABLE `pedidos` (
   `quantidade` varchar(3) NOT NULL,
   `valor_total` decimal(10,2) NOT NULL,
   PRIMARY KEY (`idpedido`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 
 
