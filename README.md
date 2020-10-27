@@ -19,7 +19,11 @@ Um e-commerce de produtos para casa.
     
 *```instalar o Xampp```*
 
-*```abrir através da pasta htdocs```*
+*```salvar os arquivos na pasta htdocs```*
+
+*```abrir através do localhost```*
+
+
 
 -------------
 
