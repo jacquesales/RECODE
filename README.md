@@ -2,24 +2,27 @@
 
 
 -------------
-Projeto individual do Recode Pro: website **Full Stack Eletro** 
-Um e-commerce de produtos para casa
+Projeto individual do Recode Pro: website **Full Stack Eletro**.
+Um e-commerce de produtos para casa.
 
 
 + **Front-end**
     + HTML
     + CSS
     + Javascript
-+  **Back-end**
-    + Banco de Dados: MySQL (Workbench)
-    
-    
-*```VS Code ```*
 
-*```LiveServer ```*
++  **Back-end**
+    + Banco de Dados: MySQL
+    + PHP
+
+    
+    
+*```instalar o Xampp```*
+
+*```abrir através da pasta htdocs```*
 
 -------------
 
 
 
-Aprender sempre. Evoluir constantemente 🚀
+Aprendendo sempre. Evoluindo constantemente 🚀
