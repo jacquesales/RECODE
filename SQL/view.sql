@@ -46,7 +46,6 @@ CREATE TABLE `pedidos` (
 );
 
 
-
 /* Listando produtos que sejam da categoria geladeira */
 SELECT *
 FROM fseletro.produtos
@@ -61,3 +60,43 @@ WHERE preco_final >= 2000 AND preco_final <= 4000;
 SELECT *
 FROM fseletro.produtos
 WHERE descricao LIKE '%Brastemp%';
+
+
+-- --------------------------------------------------------
+
+
+-- Criando a tabela `mensagens`
+CREATE TABLE `mensagens` (
+  `idmsg` int(11) NOT NULL,
+  `data` datetime NOT NULL DEFAULT current_timestamp(),
+  `nome` varchar(150) NOT NULL,
+  `email` varchar(80) NOT NULL,
+  `assunto` varchar(25) NOT NULL,
+  `mensagem` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Inserindo dados do usuario (aba Fale Conosco) na tabela `mensagens`
+INSERT INTO `mensagens` (`idmsg`, `data`, `nome`, `email`, `assunto`, `mensagem`) 
+VALUES (2, '2020-10-27 10:44:57', 'Maria', 'maria@teste.com', 'informacao', 'OlÃ¡, mensagem teste'),
+(3, '2020-10-27 10:46:07', 'JoÃ£o', 'jsd.gomes@exemplo.com.br', 'sugestao', 'Ampliar a gama de produtos'),
+(17, '2020-10-27 10:55:46', 'Laura', 'laura@exemplo.com', 'elogio', 'Obrigada pelo envio da mercadoria na data prevista');
+
+-- Criando a tabela `pedidos`
+CREATE TABLE `pedidos` (
+  `idpedido` int(11) NOT NULL,
+  `data` datetime NOT NULL DEFAULT current_timestamp(),
+  `nome_cliente` varchar(50) NOT NULL,
+  `cpf` varchar(14) NOT NULL,
+  `endereco` varchar(150) NOT NULL,
+  `cep` varchar(10) NOT NULL,
+  `telefone` varchar(11) NOT NULL,
+  `categoria` varchar(25) NOT NULL,
+  `descricao` varchar(150) NOT NULL,
+  `quantidade` varchar(3) NOT NULL,
+  `observacao` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Inserindo dados do pedido (aba Nossos Produtos) na tabela `pedidos`
+INSERT INTO `pedidos` (`idpedido`, `data`, `nome_cliente`, `cpf`, `endereco`, `cep`, `telefone`, `categoria`, `descricao`, `quantidade`, `observacao`) 
+VALUES (1, '2020-10-27 15:39:49', 'Ana Maria', '111.222.333-99', 'Rua Amaro Lins, 277 apto 89 - Centro', '05.333.000', '1122222222', 'geladeira', 'Geladeira Frost Free Brastemp Inverse 540 litros', '1', 'Entregar apÃ³s 18h'),
+(3, '2020-10-27 15:45:25', 'Carlos Eduardo', '999.888.777-01', 'Av Ricardo Swatz, 1944 - Ipiranga', '29.000-33', '11988887777', 'microondas', 'Microondas Electrolux 20 Litros', '1', '');
