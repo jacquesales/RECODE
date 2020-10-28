@@ -32,20 +32,6 @@ VALUES (23,'geladeira','images/geladeira-brastemp.png','Geladeira Frost Free Bra
 
 
 
-/* Criando tabela 'pedidos' e seus atributos */
-CREATE TABLE `pedidos` (
-  `idpedido` int NOT NULL AUTO_INCREMENT,
-  `nome_cliente` varchar(50) NOT NULL,
-  `endereco` varchar(150) DEFAULT NULL,
-  `telefone` varchar(11) DEFAULT NULL,
-  `produto` varchar(150) NOT NULL,
-  `valor_unitario` decimal(6,2) NOT NULL,
-  `quantidade` varchar(3) NOT NULL,
-  `valor_total` decimal(10,2) NOT NULL,
-  PRIMARY KEY (`idpedido`)
-);
-
-
 /* Listando produtos que sejam da categoria geladeira */
 SELECT *
 FROM fseletro.produtos
