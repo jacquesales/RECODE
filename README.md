@@ -8,8 +8,9 @@ Um e-commerce de produtos para casa.
 
 + **Front-end**
     + HTML
-    + CSS
+    + CSS    
     + Javascript
+    + Bootstrap
 
 +  **Back-end**
     + Banco de Dados: MySQL
