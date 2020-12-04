@@ -7,7 +7,7 @@ Um e-commerce de eletrodomésticos.
 
 -------------
 
-####Stacks
+**Stacks**
 
 
 + **Front-end**
@@ -31,7 +31,8 @@ Um e-commerce de eletrodomésticos.
 -------------
 
 
-####Development
+**Development**
+
 `$ git clone https://github.com/jacquesales/RECODE.git`
 
 `$ cd RECODE/frontend`
