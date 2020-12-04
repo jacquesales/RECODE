@@ -1,0 +1,28 @@
+.menu-main {
+    display: inline;
+    background-color: var(--menu-main-bg);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu-main a {
+    margin: 0 4rem;
+    font-size: clamp(.9rem, 1.2vw, 1.6rem);   
+    color: var(--menu-main-text);
+    font-weight: bold;
+    transition: .4s;
+}
+.menu-main a:hover {
+    color: var(--menu-main-hv);
+}
+
+.nav-link {
+    display: inline !important;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 836px) {
+    .menu-main a {
+        margin: 0 .5rem;
+    }
+}

@@ -1,0 +1,26 @@
+
+
+.jumb-img {
+    background-image: url('https://images.pexels.com/photos/5792859/pexels-photo-5792859.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+}
+
+.jumb-text,
+.text,
+.tittle {
+    color: var(--white);
+    font-weight: 600;
+    text-shadow: 2px 2px rgb(49, 49, 49);
+}
+.jumb-text{
+    font-size: clamp(1rem, 2vw, 2.2rem);
+}
+
+.tittle {
+    font-size: clamp(1.2rem, 2.6vw, 2.8rem);
+}
+
+.text {
+    font-size: clamp(.9rem, 1.5vw, 1.9rem);
+}

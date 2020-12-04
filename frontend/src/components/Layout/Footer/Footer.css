@@ -1,0 +1,5 @@
+.footer-text {
+    font-size: .8rem;
+    color: var(--footer-text);
+    line-height: 2rem;
+}

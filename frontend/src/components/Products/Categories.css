@@ -1,0 +1,9 @@
+
+/* RESPONSIVE */
+
+@media (max-width: 580px) {
+    .categories {
+        display: flex;
+        flex-wrap: wrap;        
+    }
+}
