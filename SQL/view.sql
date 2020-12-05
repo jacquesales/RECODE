@@ -61,16 +61,43 @@ CREATE TABLE `pedidos` (
   `complemento` VARCHAR(25),
   `bairro` VARCHAR(150) NOT NULL,
   `cidade` VARCHAR(30) NOT NULL,
-  `estado` VARCHAR(2) NOT NULL, 
+  `estado` VARCHAR(2) NOT NULL,  
   `telefone` VARCHAR(11) NOT NULL,
+  `idProduto` INT NOT NULL,
   `categoria` VARCHAR(25) NOT NULL,
   `descricao` VARCHAR(150) NOT NULL,
   `quantidade` VARCHAR(3) NOT NULL,
   `observacao` VARCHAR(200),
-  PRIMARY KEY (`idPedido`)
+  PRIMARY KEY (`idPedido`),
+  CONSTRAINT fkProdPedido FOREIGN KEY (idProduto) REFERENCES produtos (idProduto)
 ) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8 DEFAULT COLLATE=utf8_general_ci;
+
 
 -- Inserindo dados do pedido (aba Nossos Produtos) na tabela `pedidos`
 INSERT INTO `pedidos`
-VALUES (NULL, '2020-10-27 15:39:49', 'Ana Maria', '111.222.333-99', '05.333.000', 'Rua Amaro Lins', '277','ap 89','Centro','São Paulo','SP','1122222222', 'geladeira', 'Geladeira Frost Free Brastemp Inverse 540 litros', '1', 'Entregar após 18h'),
-(NULL, '2020-10-27 15:45:25', 'Carlos Eduardo', '999.888.777-01', '29.000-33', 'Av Ricardo Swatz','1944',NULL,'Ipiranga','São Paulo','SP', '11988887777', 'microondas', 'Microondas Electrolux 20 Litros', '1', NULL);
+VALUES (NULL, '2020-11-28 15:36:41', 'Ana Maria', '111.222.333-99', '05.333.000', 'Rua Amaro Lins', '277','ap 89','Centro','São Paulo','SP','1122222222', 1, 'geladeira', 'Geladeira Frost Free Brastemp Inverse 540 litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Carlos Eduardo', '999.888.777-01', '29.000-33', 'Av Ricardo Swatz','1944',NULL,'Ipiranga','São Paulo','SP', '11988887777', 8, 'microondas', 'Microondas Electrolux 20 Litros', '1', NULL),
+(NULL, '2020-11-28 15:36:41', 'José', '547.222.333-55', '00.000.000', 'Rua Amaro Lins', '277','ap 89','Centro','São Paulo','SP','1122222222', 1, 'geladeira', 'Geladeira Frost Free Brastemp Inverse 540 litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Aline', '654.222.333-57', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 4, 'fogão', 'Fogão 5 Bocas Brastemp Acendimento Automático', '2', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Elisângela', '230.222.333-03', '00.000.000', 'Rua Exemplo', '100','ap 55','Centro','São Paulo','SP','1122222222', 12, 'lavalouca', 'Lava-Louças 18 Serviços Brastemp', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Ricardo', '634.222.333-57', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Gilberto', '349.222.333-56', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '4', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Andressa', '697.222.333-13', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 4, 'fogão', 'Fogão 5 Bocas Brastemp Acendimento Automático', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Patricia', '111.222.333-49', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 1, 'geladeira', 'Geladeira Frost Free Brastemp Inverse 540 litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Samuel', '394.222.333-94', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '3', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Fernanda', '497.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 1, 'geladeira', 'Geladeira Frost Free Brastemp Inverse 540 litros', '2', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Zélia', '111.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 1, 'geladeira', 'Geladeira Frost Free Brastemp Inverse 540 litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Carolina', '974.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Amaro', '302.222.333-67', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Paulo', '430.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '2', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'José Carlos', '294.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 4, 'fogão', 'Fogão 5 Bocas Brastemp Acendimento Automático', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Betina', '247.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 1, 'geladeira', 'Geladeira Frost Free Brastemp Inverse 540 litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Laís', '111.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 1, 'geladeira', 'Geladeira Frost Free Brastemp Inverse 540 litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Hugo', '341.222.333-04', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Ana Lucia', '341.222.333-04', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Luis', '354.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 1, 'geladeira', 'Geladeira Frost Free Brastemp Inverse 540 litros', '2', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Denis', '281.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 1, 'geladeira', 'Geladeira Frost Free Brastemp Inverse 540 litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Wanessa', '364.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '1', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Maria Julia', '237.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '2', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Oswaldo', '229.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 4, 'fogão', 'Fogão 5 Bocas Brastemp Acendimento Automático', '2', 'Entregar após 18h'),
+(NULL, '2020-11-28 15:36:41', 'Tadeu', '251.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '1', 'Entregar após 18h');
