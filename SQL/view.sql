@@ -101,3 +101,20 @@ VALUES (NULL, '2020-11-28 15:36:41', 'Ana Maria', '111.222.333-99', '05.333.000'
 (NULL, '2020-11-28 15:36:41', 'Maria Julia', '237.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '2', 'Entregar após 18h'),
 (NULL, '2020-11-28 15:36:41', 'Oswaldo', '229.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 4, 'fogão', 'Fogão 5 Bocas Brastemp Acendimento Automático', '2', 'Entregar após 18h'),
 (NULL, '2020-11-28 15:36:41', 'Tadeu', '251.222.333-99', '00.000.000', 'Rua Exemplo', '100','55','Centro','São Paulo','SP','1122222222', 8, 'microondas', 'Microondas Electrolux 20 Litros', '1', 'Entregar após 18h');
+
+
+-- Exibindo informações dos pedidos
+SELECT pedidos.idPedido,
+produtos.descricao AS Produto,
+pedidos.quantidade AS Quantidade,
+produtos.precoFinal * pedidos.quantidade AS ValorDaVenda
+FROM produtos INNER JOIN pedidos
+ON produtos.idProduto = pedidos.idProduto
+ORDER BY pedidos.idPedido;
+
+-- Exibindo o total de vendas de cada categoria
+SELECT pedidos.categoria,COUNT(*) AS TotalVendido
+FROM pedidos
+INNER JOIN produtos 
+ON produtos.idProduto = pedidos.idProduto 
+GROUP BY pedidos.categoria;
