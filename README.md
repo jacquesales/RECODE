@@ -11,7 +11,7 @@ Um e-commerce de eletrodomésticos.
 
 
 + **Front-end**
- ![](https://imgur.com/fGqHa7q.png) ![](https://imgur.com/bSnYKHh.png) ![](https://imgur.com/DdPdm8E.png)  ![](https://imgur.com/ObdIpp3.png) ![](https://imgur.com/07GKIrH.png)
+ ![](https://imgur.com/1NjGtJW.png) ![](https://imgur.com/IiFRKMs.png) ![](https://imgur.com/PJH9HRR.png) ![](https://imgur.com/RuudwXx.png) ![](https://imgur.com/LRdLuch.png)
  
     + HTML
     + CSS
@@ -21,7 +21,7 @@ Um e-commerce de eletrodomésticos.
 
 
 +  **Back-end**
-![](https://imgur.com/U9ogPJ1.png) ![](https://imgur.com/qX30MbL.png) ![](https://imgur.com/xu2mr1m.png)
+![](https://imgur.com/dup4Y3m.png) ![](https://imgur.com/5rcoDDg.png) ![](https://imgur.com/wv1bY5B.png)
 
     + Banco de Dados: MySQL
     + PHP
