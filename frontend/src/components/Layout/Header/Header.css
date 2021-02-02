@@ -10,7 +10,7 @@
 .brand {
     margin: 0rem;
     padding-left: 20rem;
-    font-size: clamp(1.2rem, 2vw, 2.2rem);
+    font-size: clamp(1rem, 2vw, 2.2rem);
     font-weight: 600;
     letter-spacing: 0.6rem;
 }
@@ -21,14 +21,15 @@
 }
 
 .link-top {
+    padding: .5rem 0;
     color: var(--menu-top-text);
+    font-size: clamp(.8rem, 1.2vw, 1.6rem);
     cursor: pointer;
 }
 .link-top:hover {
     text-decoration: none;
     color: var(--menu-top-hv);
 }
-
 
 .input-group {
     width: 50% !important;
@@ -64,5 +65,12 @@
 
     .br {
         display: none;
+    }
+}
+
+@media (max-width: 477px) {
+    .input-group {
+        width: 75% !important;
+        padding-top: .5rem;
     }
 }

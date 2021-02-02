@@ -23,9 +23,9 @@ Um e-commerce de eletrodomésticos.
 +  **Back-end**
 ![](https://imgur.com/dup4Y3m.png) ![](https://imgur.com/5rcoDDg.png) ![](https://imgur.com/wv1bY5B.png)
 
-    + Banco de Dados: MySQL
-    + PHP
+    + Nodejs
     + JSON
+    + Banco de Dados: MySQL
 
 
 -------------
@@ -33,9 +33,9 @@ Um e-commerce de eletrodomésticos.
 
 **Development**
 
-`$ git clone https://github.com/jacquesales/RECODE.git`
+`$ git clone https://github.com/jacquesales/Recode-FullStack-Eletro.git`
 
-`$ cd RECODE/frontend`
+`$ cd Recode-FullStack-Eletro/frontend`
 
 `$ npm install`
 

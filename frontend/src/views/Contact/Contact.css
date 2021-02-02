@@ -1,0 +1,11 @@
+.contact-txt {
+    margin: .5rem 0 0 0;
+}
+
+.title {
+    font-size: clamp(1.2rem, 1.8vw, 1.9rem);
+}
+
+.card-size {
+    max-width: 25rem;
+}
