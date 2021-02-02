@@ -1,18 +1,22 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import './AllProducts.css'
 
 const AllProducts = () =>
 {
 
-    const [product, setProducts] = React.useState([]); 
+    const [product, setProducts] = useState([]); 
 
-    useEffect(async () => {
-        const url = "http://localhost/RECODE/backend/Products.php";
-        const response = await fetch(url);
-        setProducts(await response.json());
-    }, []);
+    useEffect(() => {
+        async function fetchData(){
+            const returnPage = await fetch("http://localhost:3500/products")
+            const data = await returnPage.json()
+            setProducts(data);
+        }
+        fetchData();
+        
+    }, []); 
 
     
     return (        
@@ -20,18 +24,18 @@ const AllProducts = () =>
             <div className="container my-3">   
                           
                 <div className="mt-3 row row-cols-3 text-center">
-                    {product.map((props) => {
+                    {product.map((item) => {
 
                         return (
                         
                             <div className="all-products">
-                                <div key={props.id} className="box-product">                                                                   
-                                    <img src={require(`./images/${props.imagem}`).default} alt="Imagem de Produtos"/>                                    
+                                <div key={item.idproduto} id={item.categoria} className="box-product">                                                                   
+                                    <img src={item.imagem} alt={item.categoria}/>                                    
                                     <br/>
-                                    <p className="description">{props.descricao}</p>
+                                    <p className="description">{item.descricao}</p>
                                     <hr/>
-                                    <p className="previousvalue">{props.precoAnterior}</p>
-                                    <p className="currentvalue">{props.precoFinal}</p>
+                                    <p className="previousvalue">{item.preco_anterior}</p>
+                                    <p className="currentvalue">{item.preco_final}</p>
                                 </div>
                             </div>
                         );

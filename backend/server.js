@@ -14,11 +14,15 @@ const connection = mysql.createConnection({
   database: "fseletro",
 });
 
-// * request usado para passagem de parâmetros pra nossa rota; * response é a resposta/retorno que temos do servidor ao acessar a nossa rota
 // criando uma rota utilizando um método http que espera 2 parâmetros: 1º é a rota; 2º a função de callback (com 2 parâmetros que são objetos) que será executada quando a rota for acessada
-server.get("/produtos", (req, res) => {
+// * request usado para passagem de parâmetros pra nossa rota; * response é a resposta/retorno que temos do servidor ao acessar a nossa rota
+server.get("/products", (req, res) => {
   connection.query("SELECT * FROM produtos", (error, result) => {
-    res.send(result);
+    if (error) {
+      res.send(error)
+    } else {
+      res.send(result)
+    }
   });
 });
 

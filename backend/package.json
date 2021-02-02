@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Projeto API-Nodejs",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon ./server.js"
   },
@@ -16,10 +17,10 @@
     "cors": "^2.8.5",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "prettier": "^2.2.1",
     "express": "^4.17.1",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
     "sucrase": "^3.17.1"
   },
   "devDependencies": {
