@@ -15,13 +15,13 @@ Um e-commerce de eletrodomésticos.
  
     + HTML
     + CSS
-    + Javascript
     + Bootstrap
+    + Javascript    
     + React
 
 
 +  **Back-end**
-![](https://imgur.com/dup4Y3m.png) ![](https://imgur.com/5rcoDDg.png) ![](https://imgur.com/wv1bY5B.png)
+![](https://imgur.com/N88jf37.png)![](https://imgur.com/wv1bY5B.png) ![](https://imgur.com/dup4Y3m.png)
 
     + Nodejs
     + JSON
