@@ -35,8 +35,21 @@ Um e-commerce de eletrodomésticos.
 
 `$ git clone https://github.com/jacquesales/Recode-FullStack-Eletro.git`
 
+* Start no Xamp/ Lamp/ Wamp
+* Rodar o arquivo: view.sql
+
+Na pasta frontend:
+
 `$ cd Recode-FullStack-Eletro/frontend`
 
 `$ npm install`
+
+`$ npm start`
+
+Na pasta backend:
+
+`$ cd Recode-FullStack-Eletro/backend`
+
+`$ npm i express nodemon sucrase cors mysql`
 
 `$ npm start`
